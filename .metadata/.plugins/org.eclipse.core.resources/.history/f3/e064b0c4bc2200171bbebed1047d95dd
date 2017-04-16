@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		// build a function that takes in only one line...
+		String string = scan.nextLine();
+		scan.close();
+		
+		System.out.println(string);
+	}
+
+}

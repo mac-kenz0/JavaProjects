@@ -1,0 +1,11 @@
+
+public class reversedMethods {
+
+	public String bruteForece(String s){
+		
+		
+		
+		return s;
+	}
+	
+}

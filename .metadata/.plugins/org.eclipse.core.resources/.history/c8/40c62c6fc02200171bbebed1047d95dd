@@ -1,0 +1,38 @@
+
+/* So I have something that is garbage, but works.
+ * 1. How do I move the static bruteForce method to another class
+ *  such that App can still access it ?
+ * 
+ * What's more important.... creating a more elegant method
+ * or figuring out how to abstract out the brute force method.
+ * abstract.
+ * */
+import java.util.Scanner;
+
+public class App {
+	private static String bruteForce(String s) {
+
+		String reversed = "";
+		for (int i = s.length() - 1; i >= 0; i--) {
+			reversed += s.charAt(i);
+		}
+		return reversed;
+	}
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		String string = scan.nextLine();
+		scan.close();
+
+		String result = bruteForce(string);
+		System.out.println(result);
+		
+		reversedMethods.testString();
+		String reversed = reversedMethods.bruteForceAbstract(string);
+		System.out.println(reversed);
+	
+	}
+
+
+}

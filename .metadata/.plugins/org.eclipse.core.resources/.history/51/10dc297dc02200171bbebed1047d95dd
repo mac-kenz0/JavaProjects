@@ -1,0 +1,20 @@
+/* TODO: More elegant solution
+ *  is there a java method I can use ?
+ *  What is the time com
+ * */
+import java.util.Scanner;
+
+public class App {
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		String string = scan.nextLine();
+		scan.close();
+
+		String reversed = reversedMethods.bruteForceAbstract(string);
+		System.out.println(reversed);
+	
+	}
+
+
+}

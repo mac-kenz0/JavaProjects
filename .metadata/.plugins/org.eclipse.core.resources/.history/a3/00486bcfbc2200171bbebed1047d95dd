@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		// build a function that takes in only one line...
+		String string = scan.nextLine();
+		scan.close();
+		
+		// there's a few different ways you could do this....
+		// simple for loop
+		// is there a way to do this via regex ?
+		// is there build in java loops
+		
+		String reversed;
+		for (int i = string.length() ; i >= 0; i--){
+			reversed += string.charAt(i)
+		}
+	}
+
+}

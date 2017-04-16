@@ -1,0 +1,37 @@
+
+/* So I have something that is garbage, but works.
+ * 
+ * 
+ * */
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+
+		// build a function that takes in only one line...
+		String string = scan.nextLine();
+		scan.close();
+
+		String result = bruteForce(string);
+		System.out.println(result);
+
+		// there's a few different ways you could do this....
+		// simple for loop
+		// is there a way to do this via regex ?
+		// is there build in java loops
+
+	}
+
+	private static String bruteForce(String s) {
+
+		String reversed = "";
+		for (int i = s.length() - 1; i >= 0; i--) {
+			reversed += s.charAt(i);
+		}
+		return reversed;
+	}
+
+}

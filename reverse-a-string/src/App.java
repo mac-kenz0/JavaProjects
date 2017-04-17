@@ -13,6 +13,8 @@ public class App {
 		String reversed = reversedMethods.bruteForce(string);
 		System.out.println(reversed);
 	
+		String sbReversed = reversedMethods.sbReverse(string);
+		System.out.println(sbReversed);
 	}
 
 

@@ -1,0 +1,36 @@
+public class Account {
+	Customer customer;
+	int balance;
+	
+	public Account (Customer customer, int balance) {
+		this.customer = customer;
+		this.balance = balance;
+	}
+	
+	public void withDrawl(int cash){
+		if (balance > cash){
+			balance-= cash;
+			System.out.println("Here is yo money... balance is now: " + balance);
+		}
+		else {
+			// maybe attach fee ???
+			System.out.println("home gurl u do not have that money");
+		}
+	}
+	
+	public void openAccount(String first, String name, String password int socialSecurity){
+		Customer customer = new Customer(first, name, password, socialSecurity);
+	}
+	
+	
+	
+	public void addFunds(int cash){
+		// assume cash is positive
+		balance += cash;
+		System.out.println("balance is now: " + balance);
+	}
+	public void returnBalance() {
+		System.out.println("the balance is " + balance);
+		
+	}
+}

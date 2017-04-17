@@ -1,0 +1,37 @@
+
+public class App {
+	public class Customer {
+		String firstName, lastName;
+		int socialSecurity ; // might be able to use byte or smaller #
+		
+		public Customer(String firstName, String lastName, int socialSecurity){
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.socialSecurity = socialSecurity;
+		}
+		
+	}
+	public class Account {
+		Customer customer;
+		int balance;
+		
+		public void withDrawl(int cash){
+			if (balance > cash){
+				balance-= cash;
+				System.out.println("Here is yo money... balance is now: " + balance);
+			}
+			else {
+				// maybe attach fee ???
+				System.out.println("home gurl u do not have that money");
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// you probably don't want to pass
+		Customer cust = new Customer ("Nancy", "Drew", 23452345);
+		System.out.println(cust);
+	}
+
+}

@@ -1,0 +1,43 @@
+
+public class App {
+	public static class Customer {
+		String firstName, lastName;
+		int socialSecurity ; // might be able to use byte or smaller #
+		
+		public Customer(String firstName, String lastName, int socialSecurity){
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.socialSecurity = socialSecurity;
+		}
+		
+	}
+	public static class Account {
+		Customer customer;
+		int balance;
+		
+		public Account (Customer customer, int balance) {
+			this.customer = customer;
+			this.balance = balance;
+		}
+		
+		public void withDrawl(int cash){
+			if (balance > cash){
+				balance-= cash;
+				System.out.println("Here is yo money... balance is now: " + balance);
+			}
+			else {
+				// maybe attach fee ???
+				System.out.println("home gurl u do not have that money");
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// you probably don't want to pass
+		Customer nancy = new Customer("Nancy", "Drew", 1234);
+		
+		Account account = new Account(nancy, 10000);
+	}
+
+}

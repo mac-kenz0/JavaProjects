@@ -1,0 +1,27 @@
+
+public class App {
+	public class Customer {
+		String firstName, lastName;
+		int socialSecurity ; // might be able to use byte or smaller #
+	}
+	public class Account {
+		Customer customer;
+		int balance;
+		
+		public void withDrawl(int cash){
+			if (balance > cash){
+				balance-= cash;
+				System.out.println("Here is yo money... balance is now: " + balance);
+			}
+			else {
+				System.out.println("home gurl u do not have that money");
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class App {
+	public static void main(String[] args) {
+		Customer nancy = new Customer("Nancy", "Drew", 1234);
+		
+		Account account = new Account(nancy, 10000);
+		account.returnBalance();
+		System.out.println("yolo");
+	}
+
+}
